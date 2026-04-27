@@ -9,7 +9,7 @@ const Header = () => {
   const handleDownloadPDF = () => {
     // Télécharge directement le PDF
     const link = document.createElement('a');
-    link.href = '/public/documents/tableau-competences.pdf';
+    link.href = '/documents/tableau-competences.pdf';
     link.download = 'tableau-competences.pdf'; // Nom du fichier téléchargé
     document.body.appendChild(link);
     link.click();
