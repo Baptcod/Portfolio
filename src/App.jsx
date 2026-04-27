@@ -6,21 +6,12 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Competences from './components/Competences';
 
 function App() {
   return (
     <Router>
       <div className="flex bg-navy text-slate">
         <Routes>
-          <Route 
-            path="/competences" 
-            element={
-              <main className="w-full p-12">
-                <Competences />
-              </main>
-            } 
-          />
           <Route 
             path="/*" 
             element={
