@@ -3,18 +3,12 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const handleOpenPDF = () => {
     // Ouvre le PDF dans un nouvel onglet
-    window.open('/public/documents/tableau-competences.pdf', '_blank');
+    window.open('/documents/tableau-competences.pdf', '_blank');
   };
 
   const handleDownloadPDF = () => {
-    // Télécharge directement le PDF
-    const link = document.createElement('a');
-    link.href = '/documents/tableau-competences.pdf';
-    link.download = 'tableau-competences.pdf'; // Nom du fichier téléchargé
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  window.open('/documents/tableau-competences.pdf', '_blank');
+};
 
   return (
     <section id="home" className="min-h-screen flex items-center px-12">
